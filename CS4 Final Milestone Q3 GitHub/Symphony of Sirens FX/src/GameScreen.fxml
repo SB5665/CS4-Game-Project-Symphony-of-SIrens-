@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.Icon?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller=".GameScreenController">
+   <children>
+      <BorderPane layoutX="18.0" layoutY="12.0" prefHeight="376.0" prefWidth="309.0" style="-fx-background-color: black;">
+         <top>
+            <Pane prefHeight="38.0" prefWidth="309.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER">
+               <children>
+                  <Text layoutX="89.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Test Event" />
+                  <Text layoutX="154.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stage-XX" />
+                  <Text layoutX="221.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="xx:xx:xx" />
+               </children>
+            </Pane>
+         </top>
+         <bottom>
+            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Icon content="HELP_OUTLINE" layoutX="135.0" layoutY="145.0" prefHeight="25.0" prefWidth="40.0" style="-fx-background-color: green;" />
+                  <Icon content="HELP_OUTLINE" layoutX="28.0" layoutY="27.0" prefHeight="16.0" prefWidth="107.0" style="-fx-background-color: white;" />
+                  <Icon content="HELP_OUTLINE" layoutX="227.0" layoutY="19.0" prefHeight="16.0" prefWidth="15.0" style="-fx-background-color: lime;" />
+               </children>
+            </Pane>
+         </bottom>
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Icon content="HELP_OUTLINE" layoutX="137.0" layoutY="94.0" prefHeight="30.0" prefWidth="35.0" style="-fx-background-color: red;" />
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+      <Text layoutX="377.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hi Score    xx:xx:xx" />
+      <Text layoutX="377.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Score         xx:xx:xx   " />
+      <Text layoutX="377.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lives" />
+      <Text layoutX="377.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Health" />
+      <Text layoutX="377.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Armour" />
+      <Pane layoutX="353.0" layoutY="13.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Icon content="HELP_OUTLINE" layoutX="82.0" layoutY="91.0" prefHeight="17.0" prefWidth="36.0" style="-fx-background-color: gold;" />
+            <Icon content="HELP_OUTLINE" layoutX="82.0" layoutY="118.0" prefHeight="17.0" prefWidth="36.0" style="-fx-background-color: red;" />
+            <Icon content="HELP_OUTLINE" layoutX="82.0" layoutY="146.0" prefHeight="17.0" prefWidth="36.0" style="-fx-background-color: grey;" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
