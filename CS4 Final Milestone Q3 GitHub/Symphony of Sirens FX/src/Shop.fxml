@@ -1,119 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="200.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shopfxml.ShopController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shopfxml.ShopController">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="14.0" layoutX="35.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="52.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="14.0" layoutX="35.0" layoutY="170.0" stroke="BLACK" strokeType="INSIDE" width="52.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="14.0" layoutX="230.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="52.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="14.0" layoutX="230.0" layoutY="170.0" stroke="BLACK" strokeType="INSIDE" width="52.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="8.0" layoutX="99.0" layoutY="176.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="1.0" width="30.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="8.0" layoutX="129.0" layoutY="176.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" width="30.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="8.0" layoutX="159.0" layoutY="176.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" width="30.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="8.0" layoutX="189.0" layoutY="176.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" width="30.0" />
-      <Text layoutX="25.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shop" textAlignment="CENTER" wrappingWidth="72.251953125">
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../shopbg.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="10.0" arcWidth="10.0" fill="BLACK" height="42.0" layoutX="45.0" layoutY="21.0" stroke="BLACK" strokeType="INSIDE" width="104.0" />
+      <Rectangle arcHeight="10.0" arcWidth="10.0" fill="BLACK" height="42.0" layoutX="45.0" layoutY="337.0" stroke="BLACK" strokeType="INSIDE" width="104.0" />
+      <Rectangle arcHeight="10.0" arcWidth="10.0" fill="BLACK" height="42.0" layoutX="451.0" layoutY="21.0" stroke="BLACK" strokeType="INSIDE" width="104.0" />
+      <Rectangle arcHeight="10.0" arcWidth="10.0" fill="BLACK" height="42.0" layoutX="451.0" layoutY="337.0" stroke="BLACK" strokeType="INSIDE" width="104.0" />
+      <Text fill="white" layoutX="61.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shop" textAlignment="CENTER" wrappingWidth="72.251953125">
          <font>
-            <Font name="System Bold Italic" size="10.0" />
+            <Font name="System Bold Italic" size="18.0" />
          </font></Text>
-      <Text layoutX="25.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Settings" textAlignment="CENTER" wrappingWidth="72.251953125">
+      <Text fill="white" layoutX="61.0" layoutY="364.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Settings" textAlignment="CENTER" wrappingWidth="72.251953125">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Text>
+      <Text fill="white" layoutX="467.0" layoutY="364.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home" textAlignment="CENTER" wrappingWidth="72.251953125">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Text>
+      <Text fill="white" layoutX="467.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$$$" textAlignment="CENTER" wrappingWidth="72.251953125">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="rgba(255, 255, 255, 0.25)" height="120.0" layoutX="145.0" layoutY="140.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="rgba(255, 255, 255, 0.25)" height="120.0" layoutX="305.0" layoutY="140.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+      <Text layoutX="150.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="50">
          <font>
             <Font name="System Bold" size="10.0" />
-         </font></Text>
-      <Text layoutX="220.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home" textAlignment="CENTER" wrappingWidth="72.251953125">
+         </font>
+      </Text>
+      <Text layoutX="310.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="75">
          <font>
             <Font name="System Bold" size="10.0" />
-         </font></Text>
-      <Text layoutX="220.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$$$" textAlignment="CENTER" wrappingWidth="72.251953125">
-         <font>
-            <Font name="System Bold" size="10.0" />
-         </font></Text>
-      <Text layoutX="130.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weapons" textAlignment="CENTER" wrappingWidth="27.779296875">
-         <font>
-            <Font size="6.0" />
          </font>
       </Text>
-      <Text layoutX="100.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Armor" textAlignment="CENTER" wrappingWidth="27.779296875">
+      <Text layoutX="150.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Large Bullet">
          <font>
-            <Font name="System Bold" size="6.0" />
+            <Font name="System Bold" size="12.0" />
          </font>
       </Text>
-      <Text layoutX="160.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Potions" textAlignment="CENTER" wrappingWidth="27.779296875">
+      <Text layoutX="310.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Homing Bullet">
          <font>
-            <Font size="6.0" />
+            <Font name="System Bold" size="12.0" />
          </font>
       </Text>
-      <Text layoutX="190.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Heroes" textAlignment="CENTER" wrappingWidth="27.779296875">
-         <font>
-            <Font size="6.0" />
-         </font>
-      </Text>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="50.0" layoutX="92.0" layoutY="50.0" stroke="BLACK" strokeType="INSIDE" width="65.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="50.0" layoutX="162.0" layoutY="50.0" stroke="BLACK" strokeType="INSIDE" width="65.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="50.0" layoutX="92.0" layoutY="105.0" stroke="BLACK" strokeType="INSIDE" width="65.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="50.0" layoutX="162.0" layoutY="105.0" stroke="BLACK" strokeType="INSIDE" width="65.0" />
-      <Text layoutX="126.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*item display*">
-         <font>
-            <Font size="4.0" />
-         </font>
-      </Text>
-      <Text layoutX="195.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*item display*">
-         <font>
-            <Font size="4.0" />
-         </font>
-      </Text>
-      <Text layoutX="126.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*item display*">
-         <font>
-            <Font size="4.0" />
-         </font>
-      </Text>
-      <Text layoutX="195.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*item display*">
-         <font>
-            <Font size="4.0" />
-         </font>
-      </Text>
-      <Text layoutX="94.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*cost*">
-         <font>
-            <Font size="6.0" />
-         </font>
-      </Text>
-      <Text layoutX="164.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*cost*">
-         <font>
-            <Font size="6.0" />
-         </font>
-      </Text>
-      <Text layoutX="94.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*cost*">
-         <font>
-            <Font size="6.0" />
-         </font>
-      </Text>
-      <Text layoutX="164.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*cost*">
-         <font>
-            <Font size="6.0" />
-         </font>
-      </Text>
-      <Text layoutX="94.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*item name*">
-         <font>
-            <Font size="6.0" />
-         </font>
-      </Text>
-      <Text layoutX="164.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*item name*">
-         <font>
-            <Font size="6.0" />
-         </font>
-      </Text>
-      <Text layoutX="94.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*item name*">
-         <font>
-            <Font size="6.0" />
-         </font>
-      </Text>
-      <Text layoutX="164.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*item name*">
-         <font>
-            <Font size="6.0" />
-         </font>
-      </Text>
+      <ImageView fitHeight="75.0" fitWidth="150.0" layoutX="145.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imgs/largebullet.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="75.0" fitWidth="150.0" layoutX="305.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imgs/homingbullet.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
