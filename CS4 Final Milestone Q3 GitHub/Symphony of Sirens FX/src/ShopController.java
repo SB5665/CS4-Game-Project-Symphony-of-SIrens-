@@ -1,70 +1,52 @@
-import javafx.fxml.Initializable;
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
-import javafx.scene.shape.Rectangle;
-import javafx.scene.text.Text;
-import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
+import java.io.IOException;
 
+/**
+ *
+ * @author Admin
+ */
 public class ShopController implements Initializable {
 
     @FXML
-    private Rectangle weaponsRectangle;
-    
-    @FXML
-    private Rectangle armorRectangle;
-    
-    @FXML
-    private Rectangle potionsRectangle;
-    
-    @FXML
-    private Rectangle heroesRectangle;
+    private Button homeButton;
 
-    @FXML
-    private Text weaponsText;
-    
-    @FXML
-    private Text armorText;
-    
-    @FXML
-    private Text potionsText;
-    
-    @FXML
-    private Text heroesText;
-
+    /**
+     * Initializes the controller class.
+     * This method is automatically called after the FXML file has been loaded.
+     * It sets up event handlers for the buttons.
+     *
+     * @param url The location used to resolve relative paths for the root object, or null if the location is not known.
+     * @param rb  The resources used to localize the root object, or null if the root object was not localized.
+     */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        setClickHandlers();
-    }
+        // Initialize any required components
+        homeButton.setOnAction(event -> handleHomeButtonClicked());
 
-    private void setClickHandlers() {
-        weaponsRectangle.setOnMouseClicked(e -> updateStyle(weaponsRectangle, weaponsText));
-        armorRectangle.setOnMouseClicked(e -> updateStyle(armorRectangle, armorText));
-        potionsRectangle.setOnMouseClicked(e -> updateStyle(potionsRectangle, potionsText));
-        heroesRectangle.setOnMouseClicked(e -> updateStyle(heroesRectangle, heroesText));
     }
-
-    private void updateStyle(Rectangle rectangle, Text text) {
-        rectangle.setStrokeWidth(2);  // Bolden the rectangle
-        text.setFont(javafx.scene.text.Font.font("System Bold"));  // Bolden the text
-    }
-
+    
+    /**
+     * Event handler for the play button click event.
+     * It loads the StartScreen.fxml and switches to the home screen.
+     */
     @FXML
-    private void handleHomeButtonClicked(ActionEvent event) throws IOException {
-        loadScene("StartScreen.fxml", event);
-    }
+    private void handlePlayButtonClicked() {
+        try {
+            // Load the LevelSelectorScreen.fxml
+            Parent startScreenRoot = FXMLLoader.load(getClass().getResource("StartScreen.fxml"));
+            Scene startScreenScene = new Scene(startScreenRoot);
 
-    private void loadScene(String fxmlFile, ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlFile));
-        Parent root = loader.load();
-        Scene scene = new Scene(root);
-        Stage stage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
-        stage.setScene(scene);
-        stage.show();
+            // Get the current stage (the window)
+            Stage currentStage = (Stage) playButton.getScene().getWindow();
+
+            // Set the new scene on the stage
+            currentStage.setScene(startScreenScene);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
-}
