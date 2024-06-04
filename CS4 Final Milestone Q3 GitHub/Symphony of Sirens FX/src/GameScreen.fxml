@@ -8,6 +8,11 @@
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller=".GameScreenController">
    <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imgs/gamebg.png" />
+         </image>
+      </ImageView>
       <BorderPane layoutX="18.0" layoutY="12.0" prefHeight="376.0" prefWidth="309.0" style="-fx-background-color: black;">
          <top>
             <Pane prefHeight="38.0" prefWidth="309.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER">
